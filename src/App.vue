@@ -1,20 +1,22 @@
+
 <template>
- <h1>{{ title }}</h1>
- <Modal/>
+  <h1>{{ title }}</h1>
+  <p>Welcome...</p>
+  <!-- <Modal heading="Sign up for the Givaway!" text="Grab your ninja swag for half price!" /> -->
+  <Modal :heading="heading" :text="text" theme="sale" />
 </template>
 
 <script>
-import Modal from './components/Modal.vue'
-import Modal from './components/Modal.vue'
+import Modal from './components/Modal'
 
 export default {
   name: 'App',
-  components: {
-    Modal
-  },
-  data(){
+  components: { Modal },
+  data() {
     return {
-      title: "My first vue app"
+      title: 'My First Vue App!',
+      heading: 'Sign up for the Givaway!',
+      text: 'Grab your ninja swag for half price!'
     }
   }
 }
