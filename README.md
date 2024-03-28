@@ -1,1 +1,1 @@
-<h2>First simple lesson 'modal project'</h2>
+<h2>A simple modal project to learn the basics of Vue ; custom events,slots and teleports .</h2>
